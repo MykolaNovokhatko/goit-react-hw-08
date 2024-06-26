@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { logIn, logOut, refreshUser, register } from "./operations";
 
+
 const handlePending = (state) => {
   state.isLoading = true;
 };
@@ -22,8 +23,8 @@ const authSlice = createSlice({
     isLoading: false,
     isRefreshing: false,
   },
-  extraReducers: (bilder) => {
-    bilder
+  extraReducers: (builder) => {
+    builder
       .addCase(register.pending, handlePending)
       .addCase(register.fulfilled, (state, action) => {
         state.isLoading = false;
@@ -61,4 +62,4 @@ const authSlice = createSlice({
   },
 });
 
-export const authReducer = authSlice.reducer;
+export default authSlice.reducer;

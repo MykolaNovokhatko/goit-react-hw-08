@@ -7,3 +7,7 @@
   .userName {
     font-weight: 700;
   }
+
+  .buttom {
+    display: block;
+  }

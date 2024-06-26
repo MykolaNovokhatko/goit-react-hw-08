@@ -1,14 +1,14 @@
 .link {
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
   }
   
   .active {
-    color: red;
     text-decoration: underline;
   }
   
   .nav {
     display: flex;
-    gap: 20px;
+    list-style-type: none;
+    gap: 22px;
   }
